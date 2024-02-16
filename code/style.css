@@ -1,12 +1,18 @@
+
+
 * {
   box-sizing: border-box;
+  --clr_main: #663399;
+  --clr_accent: #fffffa;
+  --clr_grey: #aaaaaa;
+  --clr_orange: rgb(255, 206, 90);
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: #0026ff;
+  font-family: "Montserrat", sans-serif;
+  background: var(--clr_main);
 }
 
 h1 {
@@ -21,7 +27,7 @@ h2 {
   font-weight: bold;
   font-size: 24px;
   line-height: 34px;
-  color: #fff;
+  color: var(--clr_accent);
   text-align: center;
   margin-bottom: 36px;
 }
@@ -38,10 +44,10 @@ input {
   border: none;
   border-radius: 4px 0 0 4px;
   background: #e5e9ff;
-  color: #0026ff;
+  color: var(--clr_main);
   padding: 16px;
   font-size: 16px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 600;
   line-height: 26px;
   flex: 1;
@@ -96,7 +102,7 @@ main {
   font-size: 16px;
   line-height: 26px;
   padding: 16px 24px;
-  color: #0026ff;
+  color: var(--clr_main);
   max-width: 40%;
 }
 
@@ -123,14 +129,14 @@ main {
 
 label {
   font-size: 16px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
   color: #0026ff;
   margin-right: 20px;
 }
 
 button {
-  background-color: #0026ff;
+  background-color: var(--clr_grey);
   color: white;
   border: none;
   border-radius: 4px;
@@ -138,7 +144,7 @@ button {
   margin-right: 4px;
   font-size: 16px;
   line-height: 26px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -148,3 +154,41 @@ button:hover {
   opacity: 0.9;
   transition: all 0.2s ease;
 }
+
+#food-category {
+  display: none;
+}
+
+#sub-pizza {
+  display: none;
+}
+
+#sub-salad {
+  display: none;
+}
+
+#sub-kebab {
+  display: none;
+}
+
+#user-portion {
+  display: none;
+}
+
+#confirmation{
+  display: none;
+}
+
+.sub-select {
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0;
+  border-color: var(--clr_accent);
+  text-align: center;
+  width: 100%;
+  background-color: var(--clr_accent);
+  color: var(--clr_main);
+}
+
